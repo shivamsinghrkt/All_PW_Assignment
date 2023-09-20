@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin-bottom: 20px;
+        }
+        #form{
+            width: 30%;
+            height: 500px;
+            border: 1px solid teal;
+            margin: auto;
+            background-color: aqua;
+         
+            padding: 20px 0 0 40px;
+
+        }
+            #form1{
+            width: 30%;
+            height: 300px;
+            border: 1px solid teal;
+            margin: auto;
+            background-color: aqua;
+         
+            padding: 20px 0 0 40px;
+
+        }
+           #form1 h3{
+            text-align: center;
+            justify-content: space-around;
+            color: blue;
+        }
+      #form h3{
+            text-align: center;
+            justify-content: space-around;
+            color: blue;
+        }
+        #btn1{
+            text-align: center;
+            padding: 30px;
+        }
+#btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 100px;
+    
+}
+#btn:hover{
+    color: white;
+    background-color: rgb(115, 115, 165);
+    border: 1px solid rgb(115, 115, 165);
+}
+    </style>
+</head>
+<body>
+    <div>
+
+
+        <!-- SignIn part -------------------------->
+        
+<form id="form">
+    <h3><u>Sign Up Page</u></h3>
+
+    <label for="">First Name:-</label>
+    <input type="text" placeholder="type your first name" required><br>
+    <label for="">Last Name:-</label>
+    <input type="text" placeholder="type your first name" required><br>
+    <label for="">Email Id:-</label>
+    <input type="email" placeholder="type your email" minlength="3" required><br>
+    <label for="">Password:-</label>
+    <input type="password" placeholder="type your password" required><br>
+    <label for="">Conform Password:-</label>
+    <input type="password" placeholder="conform password" required><br>
+    <label for="">Age:-</label>
+    <input type="number" min="1" max="150" required><br>
+    <label for="">Select Gender:-</label><br>
+    <input type="radio" name="gender_name" id="" value="male" required>
+    <label for="male">Male</label><br>
+    <input type="radio" name="gender_name" id="" value="female" required>
+    <label for="female">Female</label><br>
+    <input type="checkbox" name="term&condition" id="" required>
+    <label for="t&C">Term & Condition</label><br>
+    <div id="btn1">
+
+        <button id="btn">Sign Up</button>
+    </div>
+</form>
+    </div>
+    
+
+
+
+<!-- login part --------------------------------------->
+
+
+<form id="form1">
+    <h3><u>SignIn Page</u></h3>
+
+    
+    <label for="">Email Id:-</label>
+    <input type="email" placeholder="type your email" minlength="3" required><br>
+    <label for="">Password:-</label>
+    <input type="password" placeholder="type your password" required><br>
+    
+    <div id="btn1">
+
+        <button id="btn">Sign In</button>
+    </div>
+</form>
+
+
+</body>
+</html>
