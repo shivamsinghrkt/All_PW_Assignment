@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Assignment_1</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+    #target_first {
+     background-color: orangered;
+    }
+    #target_first :nth-child(1) {
+     color: rgb(82, 43, 43);
+     text-transform: capitalize;
+    }
+    
+      
+#Target_Second h1 {
+    background-color: white;
+    color: black;
+}
+
+
+</style>
+</head>
+<body>
+    <!-- Target Div content through css in different way -->
+
+    <!-- first i'm targeting every element of first div through css alone -->
+    <div id="target_first">
+
+        <!-- Here i'm target every in a defferent way  -->
+        <h1 >
+            first Css
+        </h1>
+        <h2>second Css</h2>
+        <h3 style="color: white;  text-transform: capitalize; ">third Css</h3>
+    </div>
+
+
+    <!-- In this Second div i'm apliying 3 ways to apply css to an element and check which one win -->
+    
+    <!-- inline > internal > External -->
+    
+    <div id="Target_Second">
+
+              <h1 style="background-color: blueviolet; color: blanchedalmond;">3 ways to apply css to an element </h1>
+         
+    </div>
+    <p> if there are two or more css rule apply on same element  the selector 
+        with the highest specificity value will be "win"..
+
+        ex:- inline > internal > external
+        
+    for more understanding we need to understand one browser give more priority which value comes first
+
+    for example :-
+                    no doubt inline value is more higher than other selector becaue i can not change postion but 
+                    but if i change internal and external position  which one comes first then 
+                    browser give more preority...     
+    </p>
+</body>
+</html>
