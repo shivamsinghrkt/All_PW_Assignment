@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body,html{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    border: 1px solid black;
+    position: relative;
+    display: flex;
+   width: 70%;
+   margin: auto;
+   
+}
+.part_1{
+     width: 60%;
+     /* background-color: red; */
+     height: 600px;
+}
+.part_2{
+     width: 40%;
+     /* background-color: yellow; */
+    height: 600px;
+    margin: 0px 20px 15px 0px;
+}
+
+#navbar{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+  /* border: 1px solid black; */
+gap: 20px;
+ 
+}
+.img{
+    display:block;
+    /* border: 1px solid white; */
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+   
+}
+
+#content{
+    margin: auto;
+    /* border: 1px solid white; */
+    width: 50%;
+    padding: 0px 20px;
+}
+
+
+.content_2{
+/* border: 1px solid rgba(0, 0, 0, 0.141); */
+    width: 100%;
+}
+
+
+#dis_box{
+    width: 90%;
+    /* border: 1px solid red; */
+    
+    margin: auto;
+}
+
+#dis_box .dis_box-1{
+    border: 1px solid rgba(51, 51, 51, 0.10);
+    width: 70%;
+    height: 10vh;
+    margin: auto;
+  
+}
+
+.dis_box-2{
+    border: 1px solid rgba(51, 51, 51, 0.10);
+     width: 70%;
+    height: 10vh;
+     margin: 20px auto;
+}
+
+.search_box{
+    border: 1px solid blue;
+     width: 70%;
+    height: 5vh;
+     margin: 25px 65px;
+     text-align: center;
+     background-color: #213D77;
+     color: white;
+     border-radius: 3px;
+     /* display: flex; */
+}
+</style>
+
+
+
+</head>
+<body>
+    <div id="main">
+        <div class="part_1">
+            <div id="navbar">
+                <div class="img">
+                    <img src="../Task_5/image/image_5.png" alt="" style="margin-right: 20px; width: 40px; height: 40px; ">
+                    <img src="../Task_5/image/image_6.png" alt="" style=" width: 40px; height: 40px;">
+                </div>
+                <div id="content">
+                    <div class="content_1" style="display: flex;  gap: 10px; padding: 0px 10px 0px 20px; float: right;">
+                        <p>Ask Disha</p>
+                        <p>Contact us</p>
+                        <p>Alerts</p>
+                    </div>
+                    <div class="content_2" style="display: inline-block; justify-content: center;">
+                        <button style="margin-right: 10px; padding: 2px 5px 0px 5px; background-color: rgba(255, 68, 0, 0.87); color: white; border: 1px solid  rgba(0, 0, 0, 0.141);">Login</button>
+                        <button style="margin-right: 15px; padding: 2px 5px 0px 5px; border: 1px solid  rgba(0, 0, 0, 0.141);">Register</button>
+                        <button  style="padding: 2px 5px 0px 5px; border: 1px solid  rgba(0, 0, 0, 0.141);">Agent Login</button>
+                    </div>
+                </div>
+            </div>
+        
+        <div id="header">
+            <h1 style="display: flex; gap: 5px; padding: 20px 0px 0px 40px;">Indian Railways</h1>
+            <div class="header__para" style="display: flex; gap: 5px; padding: 10px 0px 0px 40px;">
+                <h3 style="color: rgb(31, 177, 31);">Safety</h3>
+                <h3 style="color: rgb(238, 51, 51);">Security</h3>
+                <h3 style="color: blue;">Punctuality</h3>
+            </div>
+        
+        </div>
+
+        <div id="option" style="display: flex; gap: 20px; margin: 40px;">
+            <div style="display: flex; border: 1px solid  rgba(0, 0, 0, 0.188); background-color: #213D77 ; color: white; padding: 0px 10px;">
+                <img src="../Task_5/image/image_4.png" alt="" style=" width: 20px; padding-right: 5px;">
+                <p>BOOK Ticket</p>
+            </div>
+            <div style="display: flex; border: 1px solid  rgba(0, 0, 0, 0.188);">
+                <img src="../Task_5/image/image_2.png" alt="" style=" width: 20px; padding-right: 5px;"">
+                <p>PNR Status</p>
+            </div>
+            <div style="display: flex; border: 1px solid rgba(0, 0, 0, 0.188);">
+                <img src="../Task_5/image/image_3.png" alt="" style=" width: 20px; padding-right: 5px;">
+                <p>Chart/Vacancy</p>
+            </div>
+        </div>
+
+
+<div id="dis_box">
+ <div class="dis_box-1">
+<div class="distance" style="display: flex; justify-content: space-around;">
+    <p>From
+
+        <img src="../Task_5/image/arrow.png" alt="Loading..." style="margin: 2px 0px 0px 0px; height: 15px; width: 15px;">
+    </p>
+
+
+    <p>To
+
+        <img src="../Task_5/image/arrow.png" alt="Loading..." style="margin: 2px 0px 0px 0px; height: 15px; width: 15px;">
+    </p>
+   
+</div>
+<div class="state_Name" style="display: flex; justify-content: space-around;">
+
+<h4> <img src="../Task_5/image/ic-search-from-desktop.png" alt="Loading.." style="height: 20px; width:20px;">
+    Banglore
+</h4>
+
+<img src="../Task_5/image/path.png" alt="" style="height: 25px; width: 25px;">
+
+<h4> <img src="../Task_5/image/ic-search-to-desktop_1.png" alt="Loading.." style="height: 20px; width:20px;">
+   Kasaragod
+</h4>
+</div>
+ </div>
+ <div class="dis_box-2">
+    <div class="distance" style="display: flex; justify-content: space-around;">
+        <p> <img src="../Task_5/image/ic-search-calender-desktop.png" alt="Loading..." style="margin: 2px 0px 0px 0px; height: 15px; width: 15px;">
+             From
+    
+            <img src="../Task_5/image/arrow.png" alt="Loading..."
+                style="margin: 2px 0px 0px 0px; height: 15px; width: 15px;">
+        </p>
+   
+<p>
+    class <img src="../Task_5/image/arrow.png" alt="Loading..." style=" height: 15px; width: 15px;">
+</p>
+
+        <p>
+            <img src="../Task_5/image/widgets_FILL0_wght200_GRAD0_opsz48 1.png" alt="Loading..." style="margin: 2px 0px 0px 0px; height: 15px; width: 15px;">
+           Seat Type
+    
+            <img src="../Task_5/image/arrow.png" alt="Loading..."
+                style="margin: 2px 0px 0px 0px; height: 15px; width: 15px;">
+        </p>
+    
+    </div>
+    <div class="state_Name" style="display: flex; justify-content: space-around;">
+    
+       <div>
+        <h4> 01 Aug 23
+        </h4>
+        <p style="font-size: small; padding: 2px 15px;">Tuesday</p>
+       </div>
+    
+      <div>
+        <h4 style="padding: 2px 25px">
+            3A
+        </h4>
+        <p style="font-size: small; padding: 2px 15px">AC 3 Tier</p>
+      </div>
+
+      <div>
+<h4> <img src="../Task_5/image/ic-search-to-desktop_1.png" alt="Loading.." style="height: 20px; width:20px;">
+    TATKAL
+</h4>
+<p style="font-size: small; padding: 2px 15px">AC 3 Tier</p>
+      </div>
+       
+    </div>
+ </div>
+ <button class="search_box" style="text-align: center;" >
+    <h4  >Search Train
+        <img src="../Task_5/image/arrow_up.png" alt="error.." style="height: 12px; width: 18px; font-weight: 400; ">
+    </h4>
+ </button>
+ 
+
+</div>
+
+        </div>
+        <div class="part_2">
+            <img src="../Task_5//image/Rectangle 11.png" alt="Loading..." height="100%" width="100%" background-position="center">
+        </div>
+    </div>
+
+
+   
+</body>
+</html>
